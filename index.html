@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Estimator</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+    <section class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4"> <img src="./images/cov-19-removebg-preview.png" height="100px" alt="logo like">
+                </div>
+                <div class="col-8 pt-4 text-left">
+                    <h2 class="px-5 covid">COVID-19
+                        ESTIMATOR</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid text-white">
+            <div class="row p-4 mx-5 bg-dark">
+                <div class=" col-8">
+                    <h1 class="mb-0"><span class="mcolor">STAY SAFE!!! </span> STAY HOME!!!</br></h1>
+                    <div>
+                    </div>
+                </div>
+                <div class=" col-4">
+                    <h1 class="mb-0 text-center"><span class="mcolor">ESTIMATION</span></br></h1>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center  p-4 mx-5 bg-dark">
+                <div class="col">
+
+                    <h4 class="pl-2">Total Hospital Beds</h4>
+                    <input id="data-total-hospital-beds" class=" p-3 m-2 mb-2 " placeholder="Enter value"></input>
+
+
+                    <h4 class="mt-5 pl-2">Population</h4>
+                    <input id="data-population" class=" p-3 m-2 mb-2" placeholder="Enter value"></input>
+
+                    <h5 class="mt-3"> CI: <span class="mcolor" ;>Currently Infected</span></h5>
+                    <h5 class="mt-3"> IBRT : <span class="mcolor">Infected By Requested Time</span></h5>
+
+                </div>
+                <div class=" col">
+
+                    <h4 class="pl-2">Time to Elapse</h4>
+                    <input id="data-time-to-elapse" class=" p-3 m-2 mb-2" placeholder="Enter value"></input>
+
+                    <h4 class="mt-5 pl-2">Reported Cases</h4>
+                    <input id="data-reported-cases" class=" p-3 m-2 mb-2 " placeholder="Enter value"></input>
+
+                    <h5 class="mt-3"> DIF: <span class="mcolor">Dollars In Flight</span></h5>
+                    <h5 class="mt-3"> SCBRT : <span class="mcolor">Severe Case By Requested Time</span>
+                    </h5>
+
+                </div>
+                <div class="col">
+
+                    <h4 class="pl-2">Period Type</h4>
+
+                    <select type="text" id="data-period-type" class=" p-3 m-2 mb-2 " placeholder="Enter value">
+                        <option value="days" selected> days </options>
+                        <option value="weeks"> weeks</option>
+                        <option value="months"> months</options>
+                    </select>
+
+                    <h4 class="mt-5 pl-2">Get Estimation</h4>
+                    <button id="submit" type="button" class="btn m-2 p-2 mybtn" href="#">
+                        <h3>Submit</h3>
+                    </button>
+
+                    <h5 class="mt-3"> SI: <span class="mcolor"">Severe Impact</span></h5>
+                    <h5 class=" mt-3"> HBBRT : <span class="mcolor"">Hospital Bed By Requested Time</span>
+
+                </div>
+                <div class=" col-4 bg-light">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <h6 class="text-dark">Impact CI </h6>
+                                        <input id="ci" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">Impact IBRT</h6>
+                                        <input id="ibrt" class="text-warning p-0 widt" placeholder=" "></input>
+                                        <h6 class="text-dark">Impact SCBRT</h6>
+                                        <input id="scbrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">Impact HBBRT</h6>
+                                        <input id="hbbrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">Impact CFIBRT</h6>
+                                        <input id="cfibrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">Impact CFVBRT</h6>
+                                        <input id="cfbrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">Impact DIF</h6>
+                                        <input id="dif" class="text-warning p-0 widt" placeholder=""></input>
+
+                                    </div>
+                                    <div class="col-6">
+                                        <h6 class="text-dark">SI CI</h6>
+                                        <input id="sci" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">SI IBRT</h6>
+                                        <input id="sibrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">SI SCBRT</h6>
+                                        <input id="sscbrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">SI HBBRT</h6>
+                                        <input id="shbbrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">SI CFIBRT</h6>
+                                        <input id="scfibrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">SI CFVBRT</h6>
+                                        <input id="scfbrt" class="text-warning p-0 widt" placeholder=""></input>
+                                        <h6 class="text-dark">SI DIF</h6>
+                                        <input id="sdif" class="text-warning mb-1 widt" placeholder=""></input>
+                                    </div>
+
+
+
+                                </div>
+
+                </div>
+
+            </div>
+            <script src="./js/budget.js"></script>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.covid{
+background-color: #6C100F;
+color: white; 
+width: fit-content;
+}
+.mcolor{
+    color: #EAE3AF;
+}
+.widt{
+    width: 150px;
+}
+.mybtn{
+    background-color:#EAE3AF; 
+    border: 2px solid white;
+    color:#6C100F
+}
+body {
+    background-image: url("../images/unnamed.jpg");
+}

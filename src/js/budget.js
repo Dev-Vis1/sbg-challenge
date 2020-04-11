@@ -98,7 +98,7 @@ const covid19ImpactEstimator = (data) => {
     })(data);
 
 
-    return {
+    return console.log({
         data: data,          // the input data you got   
         impact: {
             currentlyInfected: currentlyInfected_impact,
@@ -120,6 +120,109 @@ const covid19ImpactEstimator = (data) => {
             dollarsInFlight: dollarsInFlight_severeImpact
         },  // your severe case estimation
     }
-
+    )
 };
-export default covid19ImpactEstimator;
+
+
+// export default covid19ImpactEstimator;
+
+
+// var data = {
+//     region: {
+//         name: "Africa",
+//         avgAge: 19.7,
+//         avgDailyIncomeInUSD: 5,
+//         avgDailyIncomePopulation: 0.71
+//     },
+//     periodType: "days",
+//     timeToElapse: 58,
+//     reportedCases: 674,
+//     population: 66622705,
+//     totalHospitalBeds: 1380614
+// };
+
+// const covid19ImpactEstimator = (data) => {
+//     currentlyInfected_impact = data.reportedCases * 10;
+//     infectionByRequestedTime_impact = currentlyInfected_impact * 512;
+
+//     currentlyInfected_severe = data.reportedCases * 50;
+//     infectionByRequestedTime_severe = currentlyInfected_severe * 512;
+//     return console.log({
+//         data: data,          // the input data you got   
+//         impact: {
+//             currentlyInfected_impact,
+//             infectionByRequestedTime_impact
+//         },        // your best case estimation   
+//         severeImpact: {
+//             currentlyInfected_severe,
+//             infectionByRequestedTime_severe
+//         }   // your severe case estimation
+//     }
+//     )
+
+// };
+
+// covid19ImpactEstimator(data);
+
+// console.log(2 + 2);
+// console.log(
+//     document.
+//         getElementById('expense_percentage').innerHTML);
+// des = document.getElementById('expense_percentage').textContent;
+// console.log(
+//     des
+//     // document.getElementById(DOMstrings.inputType).Value,
+//     // document.getElementById(DOMstrings.inputDescription).Value,
+
+// );
+//UI controller
+// var uiCtrl = (function () {
+//     var DOMstrings = {
+//         inputType: 'selec',
+//         inputDescription: 'description',
+//         inputValue: 'value',
+//         inputClick: 'btn',
+
+//     };
+//     return {
+//         getInput: function () {
+//             return {
+//                 type: document.getElementById(DOMstrings.inputType).Value,
+//                 description: document.getElementById(DOMstrings.inputDescription).Value,
+//                 value: document.getElementById(DOMstrings.inputValue).value,
+//             }
+//         },
+//         getDOMstrings: function () {
+//             return DOMstrings;
+//         },
+
+//     }
+
+
+// })();
+
+// //Budget controller
+// var budgetCtrl = (function () {
+//     return {
+
+//     };
+//     //codes
+
+
+// })();
+
+// //Global Controller
+// var globalCtrl = (function (bCtl, uCtl) {
+//     var DOM = uCtl.getDOMstrings();
+
+//     var ctrlAddItem = function () {
+//         var AddItem = uCtl.getInput();
+//         console.log(AddItem);
+
+//     };
+//     ctrlAddItem();
+
+
+//     //document.querySelector(DOM.inputClick).addEventListener('click', ctrlAddItem);
+
+// })(budgetCtrl, uiCtrl);

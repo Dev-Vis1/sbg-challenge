@@ -17,10 +17,11 @@ function getValue() {
     data.timeToElapse = document.getElementById('data-time-to-elapse').value;
     data.reportedCases = document.getElementById('data-reported-cases').value;
     data.reportedCases = document.getElementById('data-total-hospital-beds').value;
+
     covid19ImpactEstimator(data);
     return data;
 };
-document.querySelector('#submit').addEventListener('click', getValue);
+document.querySelector('#submit').addEventListener('click', getValue)
 
 function calc(data) {
 
@@ -63,15 +64,13 @@ function calc(data) {
         hospitalBedByRequestedTime_impact,
         casesForICUByRequestedTime_impact,
         casesForVentilatorsByRequestedTime_impact,
-        dollarsInFlight_impact,
 
         currentlyInfected_severeImpact,
         infectionByRequestedTime_severeImpact,
         severeCaseByReportedTime_severeImpact,
         hospitalBedByRequestedTime_severeImpact,
         casesForICUByRequestedTime_severeImpact,
-        casesForVentilatorsByRequestedTime_severeImpact,
-        dollarsInFlight_severeImpact
+        casesForVentilatorsByRequestedTime_severeImpact
     }
 };
 
@@ -120,7 +119,9 @@ const covid19ImpactEstimator = (data) => {
             casesForVentilatorsByRequestedTime: casesForVentilatorsByRequestedTime_severeImpact,
             dollarsInFlight: dollarsInFlight_severeImpact
         },  // your severe case estimation
-    }
+    };
 
 };
-export default covid19ImpactEstimator;
+
+
+// export default covid19ImpactEstimator;

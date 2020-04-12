@@ -64,13 +64,15 @@ function calc(data) {
         hospitalBedByRequestedTime_impact,
         casesForICUByRequestedTime_impact,
         casesForVentilatorsByRequestedTime_impact,
+        dollarsInFlight_impact,
 
         currentlyInfected_severeImpact,
         infectionByRequestedTime_severeImpact,
         severeCaseByReportedTime_severeImpact,
         hospitalBedByRequestedTime_severeImpact,
         casesForICUByRequestedTime_severeImpact,
-        casesForVentilatorsByRequestedTime_severeImpact
+        casesForVentilatorsByRequestedTime_severeImpact,
+        dollarsInFlight_severeImpact
     }
 };
 
